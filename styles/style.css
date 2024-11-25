@@ -40,7 +40,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .lots {
@@ -285,8 +284,8 @@
 }
 
 .card {
-  min-height: 563px;
   width: 334px;
+  height: 100%;
   color: #fff;
   background-repeat: no-repeat;
   background-position: center;
