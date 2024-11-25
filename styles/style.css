@@ -6,9 +6,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 1052px;
-  height: 105px;
-  margin-top: 92px;
-  margin-bottom: 96px;
+  margin-top: 90px;
+  margin-bottom: 94px;
   padding-right: 8px;
   font-weight: 100;
   font-style: normal;
@@ -19,7 +18,7 @@
 }
 
 .background {
-  height: 757px;
+  min-height: 757px;
   margin-top: 0px;
   padding: 0px;
   background-image: url("../images/cover.jpg");
@@ -38,6 +37,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .lots {
@@ -47,7 +50,7 @@
 
 .about {
   display: flex;
-  height: 595px;
+  /* height: 595px; */
   margin: 146px 24px;
 }
 
@@ -92,22 +95,20 @@
   justify-content: space-between;
   box-sizing: content-box;
   max-width: 1000px;
-  height: 98px;
   margin: 182px 50px 86px;
 }
 
-.header__menu {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 391px;
-  height: 1em;
   margin: auto 36.48px auto 26.52px;
   padding-top: 6px;
   padding-left: 26px;
 }
 
-.header__menu-list {
+.menu-list {
   display: flex;
   gap: 32px;
   font-size: 18px;
@@ -116,14 +117,13 @@
 .footer__menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 149px;
-  height: 64px;
   font-size: 18px;
 }
 
-.header__menu-item {
+.menu-item {
   text-decoration: underline;
   text-underline-offset: 3px;
   list-style: circle;
@@ -139,7 +139,7 @@
   text-wrap: nowrap;
 }
 
-.header__menu-item_active {
+.menu-item_active {
   color: inherit;
   text-decoration: none;
   list-style: none;
@@ -153,7 +153,6 @@
 
 .contacts {
   width: 240.52px;
-  height: 98px;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35em;
@@ -169,7 +168,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: 240px;
-  height: 48px;
 }
 
 .socials__logo {
@@ -199,16 +197,17 @@
 .aligned-text {
   display: block;
   align-self: flex-start;
+  text-align: left;
 }
 
 .aligned-text_center {
   display: block;
-  margin-left: 286px;
+  text-align: center;
   line-height: 1;
 }
 .aligned-text_right {
   display: block;
-  margin-left: 583px;
+  text-align: right;
   line-height: 1;
 }
 
@@ -228,7 +227,6 @@
 }
 
 .cover__text {
-  height: 72px;
   color: white;
   font-weight: 100;
   font-size: 22px;
@@ -241,12 +239,12 @@
 .cover__footer {
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   align-content: center;
   gap: 79px;
   align-self: center;
-  height: 51px;
-  margin: 147px 50px 0px 78px;
+  padding: auto;
+  margin: 137px 50px 50px 78px;
 }
 
 .cover__footer_title {
@@ -257,9 +255,8 @@
 .cover__footer_button {
   width: 256px;
   max-height: 51px;
-  margin-top: -11px;
   border: 1px solid #fff;
-  padding-top: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -279,18 +276,21 @@
   flex-direction: row;
   justify-content: stretch;
   align-items: stretch;
+  flex-wrap: wrap;
   gap: 25px;
-  width: 692px;
+  width: 1052px;
   margin: 27px 0px 30px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 334px;
-  height: 563px;
+  min-height: 563px;
+  width: 334px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -309,22 +309,13 @@
   line-height: 120%;
 }
 
-.first__card {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.left__card {
   background-image: url(../images/card-lot-01.jpg);
 }
-.second__card {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.center__card {
   background-image: url(../images/card-lot-02.jpg);
 }
-.third__card {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.right__card {
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -332,7 +323,8 @@
   margin-left: 40px;
   font-size: 20px;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
+  text-decoration: underline solid 1px;
   list-style: circle;
   text-wrap: nowrap;
 }

@@ -11,15 +11,15 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item menu-item_active">
             <a class href="#"> главная </a>
           </li>
-          <li class="header__menu-item">
+          <li class="menu-item">
             <a href="#"> посмотреть лоты </a>
           </li>
-          <li class="header__menu-item">
+          <li class="menu-item">
             <a href="#"> об аукционе </a>
           </li>
         </ul>
@@ -32,13 +32,9 @@
         />
       </a>
       <address class="contacts header__contacts">
-        <a class="header__menu-item" href="tel:+99995555555">
-          +9 999 555 5555
-        </a>
+        <a class="menu-item" href="tel:+99995555555"> +9 999 555 5555 </a>
         <br />
-        <a class="header__menu-item" href="mailto:info@sobaka.ge">
-          info@sobaka.ge
-        </a>
+        <a class="menu-item" href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
         <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
     </header>
@@ -50,12 +46,13 @@
               О<span class="letter-spacing-extended">НО</span>
             </span>
             <span class="aligned-text_center letter-spacing">
-              ТЕ<span class="letter-spacing-extended">Б</span>E
+              ТЕ<span class="letter-spacing-extended">БЕ</span>
             </span>
-            <span class="aligned-text_right letter-spacing-extended">
-              Н<span class="letter-spacing">АД</span
-              ><span class="noletter-spacing">О</span>
-            </span>
+            <span class="aligned-text_right"
+              ><span class="letter-spacing-extended">Н</span
+              ><span class="letter-spacing">АД</span
+              ><span class="noletter-spacing">О</span></span
+            >
           </h1>
           <div class="cover__footer">
             <h2 class="cover__text cover__footer_title">
@@ -68,50 +65,49 @@
         </div>
       </section>
       <section class="lots">
-        <h3 class="section__text lots__header">ЛОТЫ</h3>
-        <div class="card__section">
-          <article class="first__card">
-            <div class="cover card">
-            <h3 class="card__title">
-              Фильм режиссёра, который бросил киношколу
-            </h3>
-            <p class="card__text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
+        <h2 class="section__text lots__header">ЛОТЫ</h2>
+        <ul class="card__section">
+          <li class="card left__card">
+            <div class="cover">
+              <h3 class="card__title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="card__text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
             </div>
-          </article>
-          <article class="second__card">
-            <div class="cover card">
-            <h3 class="card__title">
-              Книга, где описан один скучный день из жизни рекламного агента
-            </h3>
-            <p class="card__text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
+          </li>
+          <li class="card center__card">
+            <div class="cover">
+              <h3 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="card__text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
             </div>
-          </article>
-          <article class="third__card">
-            <div class="cover card">
-            <h3 class="card__title">
-              Картина, которую повторит даже 5-летний сын маминой подруги
-            </h3>
-            <p class="card__text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span
-                class="letter-spacing-card"
-                >...</span
-              >
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
+          </li>
+          <li class="card right__card">
+            <div class="cover">
+              <h3 class="card__title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="card__text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков<span class="letter-spacing-card">...</span>
+                Сколько бы вы на такое поставили, если бы не знали, что это —
+                одна из революционных работ Кандинского?
+              </p>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
         <a class="more__link" href="#"> посмотреть больше </a>
       </section>
       <section class="about">
@@ -144,39 +140,41 @@
     </main>
     <footer class="footer">
       <address class="footer__contacts contacts">
-        <a class="header__menu-item" href="tel:+99995555555">
-          +9 999 555 5555
-        </a>
+        <a class="menu-item" href="tel:+99995555555"> +9 999 555 5555 </a>
         <br />
-        <a class="header__menu-item" href="mailto:info@sobaka.ge">
-          info@sobaka.ge
-        </a>
+        <a class="menu-item" href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
         <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
-      <div class="footer__menu">
-        <p class="footer__menu">главная</p>
-        <p class="footer__menu-item">посмотреть лоты</p>
-        <p class="footer__menu-item">об аукционе</p>
-      </div>
-      <div class="socials">
-        <a href="#">
-          <img
-            class="socials__logo"
-            src="./images/yt.svg"
-            alt="Youtube image"
-          />
-        </a>
-        <a href="#">
-          <img class="socials__logo" src="./images/vk.svg" alt="vk_image" />
-        </a>
-        <a href="#">
-          <img
-            class="socials__logo"
-            src="./images/pinterest.svg"
-            alt="Pinterest image"
-          />
-        </a>
-      </div>
+      <nav class="footer__menu">
+        <a class="menu-item_active" href="#">главная</a>
+        <a class="menu-item" href="#">посмотреть лоты</a>
+        <a class="menu-item" href="#">об аукционе</a>
+      </nav>
+      <ul class="socials">
+        <li>
+          <a href="#" target="_blank">
+            <img
+              class="socials__logo"
+              src="./images/yt.svg"
+              alt="Youtube image"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img class="socials__logo" src="./images/vk.svg" alt="vk image" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img
+              class="socials__logo"
+              src="./images/pinterest.svg"
+              alt="Pinterest image"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
